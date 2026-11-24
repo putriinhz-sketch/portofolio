@@ -1,0 +1,2071 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portofolio Putri Nur Halizah — Teknik Komputer, IT Support, administrasi, dan publikasi ilmiah.">
+<title>Putri Nur Halizah | Portfolio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--bg:#080912;--panel:#101323;--panel2:#15192b;--text:#f1f2ff;--muted:#a7abc6;--purple:#a78bfa;--cyan:#67e8f9;--pink:#ff70c5;--line:rgba(167,139,250,.2);--glow:rgba(139,92,246,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.11;background-image:linear-gradient(rgba(180,180,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(180,180,255,.1) 1px,transparent 1px);background-size:42px 42px;z-index:-2}
+body:after{content:"";position:fixed;width:55vw;height:55vw;top:-18vw;left:-12vw;background:radial-gradient(circle,rgba(126,87,255,.18),transparent 65%);z-index:-1;pointer-events:none}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+.nav{position:sticky;top:0;z-index:100;background:rgba(8,9,18,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;letter-spacing:-1px;font-size:1.1rem}.logo span{color:var(--cyan)}
+.nav-links{display:flex;gap:24px;font-size:.85rem;color:var(--muted)}
+.nav-links a:hover{color:var(--cyan)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:white;padding:8px 12px;border-radius:10px;cursor:pointer}
+.hero{min-height:88vh;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:45px;padding:65px 0 80px}
+.eyebrow,.mono{font-family:'DM Mono',monospace;letter-spacing:1px;text-transform:uppercase;font-size:.75rem;color:var(--cyan)}
+.eyebrow{display:flex;align-items:center;gap:10px}.dot{width:8px;height:8px;border-radius:50%;background:#75ffb3;box-shadow:0 0 12px #75ffb3;animation:pulse 1.7s infinite}
+h1{font-size:clamp(3rem,7vw,6rem);line-height:.98;letter-spacing:-5px;margin:22px 0}
+h1 .accent{color:var(--purple);text-shadow:0 0 34px rgba(167,139,250,.25)}
+.typing{color:var(--cyan);font-size:1.15rem;min-height:32px}
+.hero p{color:var(--muted);max-width:600px;line-height:1.8;margin:22px 0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:12px;border:1px solid var(--line);font-weight:600;font-size:.9rem;transition:.25s;cursor:pointer}
+.btn.primary{background:linear-gradient(120deg,#8b5cf6,#5b7cfa);border:none;box-shadow:0 8px 30px rgba(112,83,246,.24)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 0 24px rgba(103,232,249,.2)}
+.hero-art{display:flex;justify-content:center;align-items:center;position:relative;min-height:420px}
+.orbit{width:340px;height:340px;border:1px solid rgba(103,232,249,.25);border-radius:50%;position:absolute;animation:rotate 18s linear infinite}
+.orbit:before{content:"";position:absolute;left:30px;top:20px;width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 20px var(--cyan)}
+.orbit.two{width:280px;height:280px;border-color:rgba(167,139,250,.4);animation-direction:reverse;animation-duration:13s}
+.orbit.two:before{background:var(--pink);box-shadow:0 0 16px var(--pink);top:auto;left:auto;right:18px;bottom:34px}
+.profile-frame{width:260px;height:340px;position:relative;z-index:2;border-radius:28px;overflow:hidden;border:1px solid rgba(167,139,250,.55);box-shadow:0 0 65px rgba(139,92,246,.22);transform:rotate(-3deg);animation:float 4s ease-in-out infinite;background:linear-gradient(145deg,#272447,#13182c)}
+.profile-frame img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block}
+.floating-tag{position:absolute;padding:10px 14px;background:rgba(16,19,35,.92);border:1px solid var(--line);border-radius:12px;font-size:.75rem;color:var(--cyan);backdrop-filter:blur(10px);z-index:3}
+.tag-a{top:25px;right:0}.tag-b{bottom:25px;left:0;color:var(--pink)}
+section{padding:88px 0}
+.section-head{margin-bottom:36px}.section-head .mono{margin-bottom:12px;display:block}.section-head h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-2px}
+.section-head p{color:var(--muted);margin-top:12px;line-height:1.7;max-width:680px}
+.grid{display:grid;gap:18px}.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}
+.card{background:linear-gradient(145deg,rgba(18,21,39,.95),rgba(12,14,25,.95));border:1px solid var(--line);padding:24px;border-radius:20px;transition:transform .3s,border .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);border-color:rgba(103,232,249,.45);box-shadow:0 15px 40px rgba(0,0,0,.25)}
+.card .icon{font-size:1.5rem;margin-bottom:14px}.card h3{font-size:1.15rem;margin-bottom:10px}.card p,.card li{color:var(--muted);line-height:1.7;font-size:.93rem}
+.card ul{padding-left:18px;margin-top:10px}.pill{display:inline-block;border:1px solid rgba(103,232,249,.25);background:rgba(103,232,249,.07);color:var(--cyan);border-radius:999px;padding:6px 10px;font: .72rem 'DM Mono',monospace;margin:5px 5px 0 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:25px}
+.stat{border:1px solid var(--line);background:rgba(16,19,35,.6);padding:16px;border-radius:14px}.stat strong{font-size:1.6rem;color:var(--purple);display:block}.stat small{color:var(--muted)}
+.timeline{display:grid;gap:18px}.timeline-card{display:grid;grid-template-columns:160px 1fr;gap:24px}
+.timeline-label{font-family:'DM Mono',monospace;color:var(--cyan);font-size:.75rem;padding-top:4px}
+.timeline-card h3{margin-bottom:7px}.timeline-card p{color:var(--muted);line-height:1.7}.timeline-card ul{padding-left:18px;margin-top:10px;color:var(--muted);line-height:1.8}
+.journal{position:relative;overflow:hidden;border-color:rgba(255,112,197,.35)}.journal:after{content:"SINTA 5";position:absolute;right:-8px;top:12px;transform:rotate(12deg);font:700 1.8rem 'DM Mono',monospace;color:rgba(255,112,197,.08)}
+.journal .badge{color:var(--pink);font-family:'DM Mono',monospace;font-size:.8rem}
+.journal h3{font-size:1.4rem;margin:14px 0}.journal p{margin:10px 0 18px}
+.journal-link{color:var(--cyan);text-decoration:underline;text-underline-offset:4px}
+.skill-row{margin:15px 0}.skill-row label{display:flex;justify-content:space-between;color:var(--muted);font-size:.85rem;margin-bottom:7px}.bar{height:7px;background:#22263b;border-radius:99px;overflow:hidden}.bar span{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--purple),var(--cyan));border-radius:99px;transform-origin:left;animation:barIn 1.4s ease both}
+.cert-card{display:flex;flex-direction:column;gap:14px}.cert-icon{font-size:2rem}.cert-card .btn{align-self:flex-start}
+.contact-box{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:30px;background:linear-gradient(120deg,rgba(91,60,181,.2),rgba(15,24,43,.8));border:1px solid var(--line);padding:32px;border-radius:24px}
+.contact-box h3{font-size:1.7rem;margin-bottom:10px}.contact-box p{color:var(--muted);line-height:1.7}.contact-links{display:flex;flex-direction:column;gap:12px;color:var(--cyan)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.8rem}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes rotate{to{transform:rotate(360deg)}}@keyframes float{50%{transform:rotate(3deg) translateY(-12px)}}@keyframes pulse{50%{opacity:.4;transform:scale(.7)}}@keyframes barIn{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center;padding-top:55px}.hero p{margin-left:auto;margin-right:auto}.eyebrow{justify-content:center}.btns{justify-content:center}.hero-art{min-height:370px}.grid-3{grid-template-columns:1fr 1fr}.timeline-card{grid-template-columns:1fr;gap:10px}.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:#0b0d19;padding:20px;flex-direction:column;border-bottom:1px solid var(--line)}.nav-links.open{display:flex}.menu-btn{display:block}}
+@media(max-width:550px){h1{letter-spacing:-3px}.grid-2,.grid-3{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.contact-box{padding:24px}.orbit{width:290px;height:290px}.orbit.two{width:235px;height:235px}.profile-frame{width:230px;height:310px}}
+
+/* ===== CONTACT / CLOSING SECTION ===== */
+
+#contact.closing-section {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 6%;
+    min-height: 700px;
+    background:
+        radial-gradient(circle at 75% 45%,
+        rgba(112, 35, 255, 0.25),
+        transparent 40%),
+        #080812;
+    border-top: 1px solid rgba(160, 90, 255, 0.25);
+}
+
+.closing-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.closing-content {
+    flex: 1;
+    min-width: 0;
+    max-width: 720px;
+}
+
+.closing-label {
+    display: inline-block;
+    color: #55eaff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.closing-content h2 {
+    font-size: clamp(48px, 6vw, 90px);
+    font-weight: 800;
+    line-height: 1.1;
+    color: #f5f3ff;
+    margin-bottom: 25px;
+}
+
+.closing-content h2 span {
+    background: linear-gradient(90deg, #a855ff, #ec69ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.closing-subtitle {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #aaa9c5;
+    max-width: 650px;
+    margin-bottom: 35px;
+}
+
+.closing-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+    border: 1px solid rgba(168, 85, 255, 0.4);
+    border-radius: 25px;
+    background: linear-gradient(
+        135deg,
+        rgba(100, 40, 180, 0.18),
+        rgba(20, 25, 45, 0.85)
+    );
+    box-shadow: 0 0 35px rgba(120, 40, 255, 0.12);
+}
+
+.closing-message h3 {
+    font-size: 30px;
+    line-height: 1.35;
+    color: #f3efff;
+    margin-bottom: 15px;
+}
+
+.closing-message p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #aaa9c5;
+}
+
+.closing-info {
+    border-left: 1px solid rgba(168, 85, 255, 0.35);
+    padding-left: 25px;
+    min-width: 260px;
+}
+
+.closing-info p {
+    color: #55eaff;
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+/* BUTTONS */
+
+.closing-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.closing-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.closing-btn.whatsapp {
+    color: #48ffbd;
+    border: 1px solid #48ffbd;
+    box-shadow: 0 0 15px rgba(72, 255, 189, 0.15);
+}
+
+.closing-btn.email {
+    color: #b78aff;
+    border: 1px solid #9b5cff;
+    box-shadow: 0 0 15px rgba(155, 92, 255, 0.15);
+}
+
+.closing-btn.cv {
+    color: #ff8af2;
+    border: 1px solid #ff65e8;
+    box-shadow: 0 0 15px rgba(255, 101, 232, 0.15);
+}
+
+.closing-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px currentColor;
+}
+
+/* PHOTO */
+
+.closing-photo {
+    flex: 0 0 42%;
+    max-width: 520px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closing-photo img {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    object-position: center bottom;
+    filter: drop-shadow(0 0 25px rgba(150, 65, 255, 0.3));
+}
+
+.photo-glow {
+    position: absolute;
+    width: 85%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(130, 40, 255, 0.45),
+        rgba(90, 20, 180, 0.08) 70%,
+        transparent
+    );
+    box-shadow: 0 0 50px rgba(140, 50, 255, 0.2);
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+    #contact.closing-section {
+        padding: 70px 6%;
+    }
+
+    .closing-container {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .closing-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .closing-photo {
+        flex: none;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .closing-photo img {
+        height: auto;
+        max-height: 500px;
+    }
+
+    .closing-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .closing-info {
+        border-left: none;
+        border-top: 1px solid rgba(168, 85, 255, 0.35);
+        padding: 20px 0 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .closing-content h2 {
+        font-size: 43px;
+    }
+
+    .closing-subtitle {
+        font-size: 16px;
+    }
+
+    .closing-message h3 {
+        font-size: 24px;
+    }
+
+    .closing-buttons {
+        flex-direction: column;
+    }
+
+    .closing-btn {
+        width: 100%;
+    }
+}
+/* ===== PHOTO POSITION & ANIMATION ===== */
+
+.closing-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Memperbesar dan memposisikan foto */
+.closing-photo img {
+    width: 115%;
+    max-width: 600px;
+    height: 650px;
+    object-fit: contain;
+    object-position: center;
+    transform: scale(1.15);
+    z-index: 2;
+
+    animation: photoFloat 4s ease-in-out infinite;
+
+    filter: drop-shadow(0 0 25px rgba(168, 85, 255, 0.35));
+}
+
+/* Lingkaran glow di belakang foto */
+.photo-glow {
+    width: 100%;
+    max-width: 550px;
+    aspect-ratio: 1 / 1;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(130, 40, 255, 0.35),
+        rgba(90, 20, 180, 0.12) 65%,
+        transparent 75%
+    );
+
+    box-shadow:
+        0 0 40px rgba(140, 50, 255, 0.15),
+        0 0 90px rgba(140, 50, 255, 0.10);
+
+    animation: glowPulse 4s ease-in-out infinite;
+}
+
+/* Animasi foto naik turun */
+@keyframes photoFloat {
+    0%, 100% {
+        transform: scale(1.15) translateY(0);
+    }
+
+    50% {
+        transform: scale(1.15) translateY(-15px);
+    }
+}
+
+/* Animasi cahaya berdenyut */
+@keyframes glowPulse {
+    0%, 100% {
+        opacity: 0.65;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.06);
+    }
+}
+/* ===== FUTURISTIC CARD HOVER ===== */
+
+/* Hanya section 02 sampai 06 */
+main section:not(#home):not(#contact) .card {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease;
+}
+
+/* Efek ketika mouse berada di atas kartu */
+main section:not(#home):not(#contact) .card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(168, 85, 255, 0.7);
+
+    box-shadow:
+        0 10px 35px rgba(140, 50, 255, 0.18),
+        0 0 18px rgba(140, 50, 255, 0.12);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(120, 50, 200, 0.10),
+            rgba(15, 18, 35, 0.95)
+        );
+}
+
+/* Kartu terasa lebih hidup */
+main section:not(#home):not(#contact) .card:hover h3 {
+    color: #c99aff;
+    transition: color 0.3s ease;
+}
+
+/* Efek glow untuk icon di dalam kartu */
+main section:not(#home):not(#contact) .card:hover i,
+main section:not(#home):not(#contact) .card:hover .icon {
+    filter: drop-shadow(0 0 8px rgba(168, 85, 255, 0.7));
+    transition: filter 0.3s ease;
+}
+
+/* Mengurangi animasi untuk perangkat yang tidak menginginkannya */
+@media (prefers-reduced-motion: reduce) {
+    main section:not(#home):not(#contact) .card {
+        transition: none;
+    }
+
+    main section:not(#home):not(#contact) .card:hover {
+        transform: none;
+    }
+}
+
+/* ===== EXTRA FUTURISTIC ANIMATIONS ===== */
+
+/* 1. NEON PULSE - cahaya border berdenyut */
+@keyframes neonPulse {
+    0%, 100% {
+        box-shadow:
+            0 0 8px rgba(140, 60, 255, 0.08),
+            0 0 18px rgba(140, 60, 255, 0.05);
+    }
+
+    50% {
+        box-shadow:
+            0 0 18px rgba(140, 60, 255, 0.20),
+            0 0 35px rgba(140, 60, 255, 0.10);
+    }
+}
+
+/* 2. SHIMMER - kilauan melintasi kartu */
+@keyframes shimmerSweep {
+    from {
+        transform: translateX(-150%) skewX(-20deg);
+    }
+
+    to {
+        transform: translateX(250%) skewX(-20deg);
+    }
+}
+
+main section:not(#home):not(#contact) .card {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Kilauan kartu saat hover */
+main section:not(#home):not(#contact) .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(190, 140, 255, 0.12),
+        rgba(255, 255, 255, 0.08),
+        transparent
+    );
+
+    pointer-events: none;
+}
+
+main section:not(#home):not(#contact) .card:hover::after {
+    animation: shimmerSweep 0.8s ease forwards;
+}
+
+/* 3. NEON BORDER PULSE */
+main section:not(#home):not(#contact) .card:hover {
+    animation: neonPulse 2s ease-in-out infinite;
+
+    border-color: rgba(180, 100, 255, 0.8);
+}
+
+/* 4. TEXT GLOW */
+main section:not(#home):not(#contact) h2:hover,
+main section:not(#home):not(#contact) h3:hover {
+    text-shadow:
+        0 0 8px rgba(170, 100, 255, 0.4),
+        0 0 20px rgba(130, 60, 255, 0.2);
+
+    transition: text-shadow 0.3s ease;
+}
+
+/* 5. ICON FLOAT */
+main section:not(#home):not(#contact) .icon,
+main section:not(#home):not(#contact) i {
+    transition: transform 0.3s ease;
+}
+
+main section:not(#home):not(#contact) .card:hover .icon,
+main section:not(#home):not(#contact) .card:hover i {
+    transform: translateY(-4px) scale(1.08);
+}
+
+/* 6. BUTTON GLOW */
+main section:not(#home):not(#contact) .btn,
+main section:not(#home):not(#contact) button {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+main section:not(#home):not(#contact) .btn:hover,
+main section:not(#home):not(#contact) button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 15px rgba(140, 60, 255, 0.25),
+        0 0 30px rgba(140, 60, 255, 0.10);
+}
+
+/* 7. SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 8. ANIMASI TIDAK AKTIF JIKA USER MEMILIH REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* ==========================================
+   CLOSING PHOTO - CINEMATIC ANIMATION
+   SECTION 07 ONLY
+========================================== */
+
+/* Animasi foto masuk dari kanan */
+@keyframes photoEntrance {
+    0% {
+        opacity: 0;
+        transform: translateX(100px) scale(0.85);
+        filter: blur(10px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateX(-8px) scale(1.03);
+        filter: blur(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+/* Floating foto */
+@keyframes photoFloating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+}
+
+/* Glow berdenyut */
+@keyframes closingGlowPulse {
+    0%, 100% {
+        opacity: 0.55;
+        scale: 0.95;
+    }
+
+    50% {
+        opacity: 1;
+        scale: 1.08;
+    }
+}
+
+/* Cahaya tambahan */
+@keyframes lightOrbit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Container foto */
+#contact .closing-photo {
+    perspective: 1000px;
+    position: relative;
+    isolation: isolate;
+}
+
+/* Foto */
+#contact .closing-photo img {
+    animation:
+        photoEntrance 1.2s cubic-bezier(0.16, 1, 0.3, 1) both,
+        photoFloating 5s ease-in-out 1.2s infinite;
+
+    transform-origin: center bottom;
+
+    transition:
+        filter 0.5s ease,
+        scale 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    will-change: transform, filter;
+}
+
+/* Ketika mouse diarahkan ke foto */
+#contact .closing-photo:hover img {
+    animation-play-state: paused;
+
+    scale: 1.08;
+
+    filter:
+        drop-shadow(0 0 20px rgba(170, 90, 255, 0.55))
+        drop-shadow(0 0 45px rgba(120, 40, 255, 0.25));
+}
+
+/* Glow di belakang foto */
+#contact .photo-glow {
+    animation:
+        closingGlowPulse 4s ease-in-out infinite;
+
+    transition:
+        background 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+/* Glow semakin terang ketika hover */
+#contact .closing-photo:hover .photo-glow {
+    opacity: 1;
+
+    background: radial-gradient(
+        circle,
+        rgba(150, 50, 255, 0.5),
+        rgba(100, 20, 200, 0.2) 60%,
+        transparent 75%
+    );
+
+    box-shadow:
+        0 0 45px rgba(160, 70, 255, 0.35),
+        0 0 100px rgba(120, 40, 255, 0.2);
+}
+
+/* Transisi smooth ketika mouse keluar */
+#contact .closing-photo img {
+    transition:
+        scale 0.5s ease,
+        filter 0.5s ease;
+}
+
+/* Dekorasi cahaya melingkar */
+#contact .closing-photo::before {
+    content: "";
+
+    position: absolute;
+    inset: 8%;
+
+    border: 1px solid rgba(170, 90, 255, 0.25);
+    border-radius: 50%;
+
+    z-index: 1;
+
+    transition:
+        transform 0.8s ease,
+        border-color 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+/* Lingkaran sedikit berputar ketika hover */
+#contact .closing-photo:hover::before {
+    transform: rotate(12deg) scale(1.04);
+
+    border-color: rgba(190, 120, 255, 0.6);
+
+    box-shadow:
+        0 0 20px rgba(160, 70, 255, 0.15);
+}
+
+/* Transisi saat hover */
+#contact .closing-photo {
+    transition: transform 0.5s ease;
+}
+
+#contact .closing-photo:hover {
+    transform: translateY(-5px);
+}
+
+/* Mobile: animasi lebih ringan */
+@media (max-width: 768px) {
+    #contact .closing-photo:hover {
+        transform: none;
+    }
+
+    #contact .closing-photo:hover img {
+        scale: 1.03;
+    }
+}
+
+/* Aksesibilitas */
+@media (prefers-reduced-motion: reduce) {
+    #contact .closing-photo img,
+    #contact .photo-glow {
+        animation: none !important;
+    }
+
+    #contact .closing-photo,
+    #contact .closing-photo img,
+    #contact .photo-glow {
+        transition: none !important;
+    }
+}
+/* =====================================
+   HERO NAME ANIMATION
+   PUTRI NUR HALIZAH
+===================================== */
+
+/* Animasi nama muncul */
+@keyframes nameReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+        filter: blur(12px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* Gradient warna bergerak */
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Neon glow */
+@keyframes nameGlow {
+    0%, 100% {
+        text-shadow:
+            0 0 8px rgba(160, 80, 255, 0.15);
+    }
+
+    50% {
+        text-shadow:
+            0 0 18px rgba(160, 80, 255, 0.35),
+            0 0 35px rgba(100, 50, 255, 0.15);
+    }
+}
+
+/* Nama utama */
+#home h1 {
+    animation:
+        nameReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) both,
+        nameGlow 4s ease-in-out 1.2s infinite;
+}
+
+/* Gradient pada nama */
+#home h1 .accent {
+    background: linear-gradient(
+        270deg,
+        #a855ff,
+        #ec69ff,
+        #55eaff,
+        #a855ff
+    );
+
+    background-size: 300% 300%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    animation:
+        gradientFlow 5s ease infinite;
+}
+
+/* Hover nama */
+#home h1:hover {
+    transition: transform 0.4s ease;
+    transform: scale(1.02);
+}
+
+/* Mengurangi gerakan bagi pengguna yang memilih reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    #home h1,
+    #home h1 .accent {
+        animation: none !important;
+    }
+}
+/* ===== ADDITIONAL NAME MARQUEE ===== */
+
+#home h1 {
+    overflow: hidden;
+}
+
+/* Efek teks berjalan tambahan */
+#home h1 {
+    animation:
+        nameReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) both,
+        nameGlow 4s ease-in-out 1.2s infinite,
+        nameMarquee 10s ease-in-out infinite;
+}
+
+@keyframes nameMarquee {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(15px);
+    }
+}
+
+/* Gradient tetap berjalan */
+#home h1 .accent {
+    animation:
+        gradientFlow 5s ease infinite;
+}
+/* ===== TABLE & INFORMATION CARD ANIMATIONS ===== */
+
+/* Animasi saat card pertama kali muncul */
+main section:not(#home):not(#contact) .card,
+main section:not(#home):not(#contact) table,
+main section:not(#home):not(#contact) .info-card,
+main section:not(#home):not(#contact) .stat-card {
+    animation: infoReveal 0.8s ease-out both;
+    transition:
+        border-color 0.4s ease,
+        box-shadow 0.4s ease,
+        background 0.4s ease,
+        transform 0.4s ease;
+}
+
+@keyframes infoReveal {
+    from {
+        opacity: 0;
+        translate: 0 25px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+/* Efek hover card */
+main section:not(#home):not(#contact) .card:hover,
+main section:not(#home):not(#contact) .info-card:hover,
+main section:not(#home):not(#contact) .stat-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(180, 100, 255, 0.8);
+    box-shadow:
+        0 0 15px rgba(157, 78, 255, 0.2),
+        0 0 35px rgba(157, 78, 255, 0.1);
+}
+
+/* Efek hover tabel */
+main section:not(#home):not(#contact) table:hover {
+    border-color: rgba(180, 100, 255, 0.7);
+    box-shadow:
+        0 0 15px rgba(157, 78, 255, 0.15),
+        0 0 30px rgba(157, 78, 255, 0.08);
+}
+
+/* Animasi baris tabel */
+main section:not(#home):not(#contact) table tr {
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+main section:not(#home):not(#contact) table tr:hover {
+    background: rgba(157, 78, 255, 0.12);
+}
+
+/* Efek teks di dalam tabel */
+main section:not(#home):not(#contact) table td,
+main section:not(#home):not(#contact) table th {
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease;
+}
+
+main section:not(#home):not(#contact) table tr:hover td {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(190, 130, 255, 0.3);
+}
+
+/* Efek neon pada angka IPK dan angka statistik */
+main section:not(#home):not(#contact) .stat-number,
+main section:not(#home):not(#contact) .highlight {
+    transition:
+        transform 0.3s ease,
+        text-shadow 0.3s ease,
+        color 0.3s ease;
+}
+
+main section:not(#home):not(#contact) .stat-number:hover,
+main section:not(#home):not(#contact) .highlight:hover {
+    transform: scale(1.08);
+    text-shadow:
+        0 0 10px #b66dff,
+        0 0 25px rgba(182, 109, 255, 0.6);
+}
+/* ===== SKILLS CARD ANIMATION ===== */
+
+#skills .grid > .card {
+    opacity: 0;
+    animation: skillsCardReveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+/* Animasi card satu per satu */
+#skills .grid > .card:nth-child(1) {
+    animation-delay: 0.15s;
+}
+
+#skills .grid > .card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+#skills .grid > .card:nth-child(3) {
+    animation-delay: 0.45s;
+}
+
+#skills .grid > .card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+/* Card muncul dari bawah */
+@keyframes skillsCardReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(45px) scale(0.94);
+        filter: blur(8px);
+    }
+
+    60% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+/* Hover effect */
+#skills .grid > .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow:
+        0 15px 40px rgba(0, 255, 255, 0.12),
+        0 0 20px rgba(0, 255, 255, 0.08);
+    border-color: rgba(0, 255, 255, 0.4);
+}
+
+/* Icon animation */
+#skills .card .icon {
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+#skills .card:hover .icon {
+    transform: scale(1.15) rotate(5deg);
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.4));
+}
+
+/* Skill pills animation */
+#skills .card .pill {
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+#skills .card .pill:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 255, 255, 0.5);
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    #skills .grid > .card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    #skills .grid > .card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        filter: none;
+    }
+
+    #skills .grid > .card,
+    #skills .card .icon,
+    #skills .card .pill {
+        transition: none;
+    }
+}
+/* =========================================
+   MONOCHROME HERO - PUTRI PORTFOLIO
+========================================= */
+
+.mono-hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: 100svh;
+    overflow: hidden;
+    background: #080808;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BACKGROUND FOTO */
+.mono-bg {
+    position: absolute;
+    inset: 0;
+
+    background-image: url("putri-hero.jpg");
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+
+    transform: scale(1.08);
+    animation: monoZoom 2s ease forwards;
+}
+
+/* OVERLAY GELAP */
+.mono-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.35),
+            transparent 35%,
+            rgba(0, 0, 0, 0.25) 60%,
+            rgba(0, 0, 0, 0.75)
+        ),
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.3),
+            transparent,
+            rgba(0, 0, 0, 0.3)
+        );
+}
+
+/* NAVIGASI ATAS */
+.mono-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 35px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 5;
+    animation: monoFade 1.2s ease forwards;
+}
+
+.mono-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.mono-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.mono-nav-right a {
+    color: white;
+    text-decoration: none;
+}
+
+/* DESKRIPSI KECIL KIRI */
+.mono-description {
+    position: absolute;
+    left: 6%;
+    top: 42%;
+
+    z-index: 3;
+
+    font-size: 11px;
+    line-height: 1.8;
+    letter-spacing: 0.4px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    animation: monoFade 1.5s ease forwards;
+}
+
+/* JUDUL BESAR */
+.mono-title-wrapper {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    text-align: center;
+
+    z-index: 4;
+}
+
+/* NAMA MEMANJANG */
+.mono-title {
+    width: 100%;
+    margin: 0;
+
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    font-size: clamp(40px, 10.2vw, 155px);
+    font-weight: 900;
+    letter-spacing: -0.075em;
+    line-height: 0.95;
+
+    background: linear-gradient(
+        90deg,
+        #282828 0%,
+        #777777 18%,
+        #eeeeee 38%,
+        #a0a0a0 55%,
+        #eeeeee 72%,
+        #353535 100%
+    );
+
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    animation:
+        monoReveal 1.5s ease forwards,
+        monoGradient 8s linear infinite;
+
+    filter: drop-shadow(0 5px 25px rgba(0, 0, 0, 0.25));
+}
+
+/* TEKS PORTFOLIO */
+.mono-subtitle {
+    margin-top: 22px;
+
+    font-size: 10px;
+    letter-spacing: 8px;
+    font-weight: 400;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    animation: monoFade 2s ease forwards;
+}
+
+/* NAVIGASI BAWAH */
+.mono-bottom {
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    bottom: 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 5;
+
+    animation: monoFade 2s ease forwards;
+}
+
+/* EXPLORE */
+.mono-explore,
+.mono-next {
+    color: white;
+    text-decoration: none;
+
+    font-size: 10px;
+    letter-spacing: 1px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mono-explore span {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.mono-explore:hover span {
+    transform: translateX(7px);
+}
+
+/* NOMOR PAGE */
+.mono-page {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/* NEXT */
+.mono-arrow {
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.4s ease;
+}
+
+.mono-next:hover .mono-arrow {
+    background: white;
+    color: black;
+    transform: rotate(45deg);
+}
+
+/* ANIMASI FOTO */
+@keyframes monoZoom {
+    from {
+        transform: scale(1.15);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* ANIMASI NAMA */
+@keyframes monoReveal {
+    from {
+        opacity: 0;
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* GRADIENT BERGERAK */
+@keyframes monoGradient {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+/* FADE IN */
+@keyframes monoFade {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+
+    .mono-nav {
+        padding: 25px 5%;
+    }
+
+    .mono-nav-right {
+        gap: 15px;
+        font-size: 8px;
+    }
+
+    .mono-description {
+        top: 32%;
+        left: 5%;
+        font-size: 9px;
+    }
+
+    .mono-title-wrapper {
+        top: 53%;
+    }
+
+    .mono-title {
+        font-size: 11.5vw;
+        letter-spacing: -0.07em;
+    }
+
+    .mono-subtitle {
+        font-size: 8px;
+        letter-spacing: 4px;
+        margin-top: 15px;
+    }
+
+    .mono-bottom {
+        left: 5%;
+        right: 5%;
+        bottom: 5%;
+    }
+
+    .mono-explore,
+    .mono-next {
+        font-size: 8px;
+        gap: 8px;
+    }
+
+    .mono-page {
+        font-size: 8px;
+    }
+
+    .mono-arrow {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* HP KECIL */
+@media (max-width: 400px) {
+
+    .mono-title {
+        font-size: 11vw;
+    }
+
+    .mono-nav-right span {
+        display: none;
+    }
+}
+
+/* ===================================
+   COVER PORTFOLIO - PURPLE CINEMATIC
+=================================== */
+
+.mono-hero {
+    min-height: 100vh;
+    height: 100svh;
+    background:
+        radial-gradient(ellipse at 50% 52%,
+            rgba(140, 75, 230, .23) 0%,
+            rgba(80, 40, 140, .13) 40%,
+            #050509 78%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* HILANGKAN FOTO DAN DESKRIPSI YANG NYASAR */
+.mono-bg,
+.mono-description {
+    display: none !important;
+}
+
+/* BACKGROUND GLOW */
+.mono-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 5% 60%,
+            rgba(130, 65, 230, .22),
+            transparent 45%),
+        radial-gradient(ellipse at 95% 60%,
+            rgba(130, 65, 230, .22),
+            transparent 45%);
+    pointer-events: none;
+}
+
+/* OVERLAY */
+.mono-overlay {
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,.15),
+        transparent 40%,
+        rgba(0,0,0,.2)
+    );
+}
+
+/* NAVBAR ATAS */
+.mono-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 3%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* EXPLORE */
+.mono-logo {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* NEXT ABOUT ME */
+.mono-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* JUDUL */
+.mono-title-wrapper {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 4;
+}
+
+/* PORTOFOLIO */
+.mono-title {
+    width: 100%;
+    margin: 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    font-size: clamp(40px, 10.4vw, 175px) !important;
+    font-weight: 900;
+    letter-spacing: -0.065em;
+    line-height: .95;
+
+    background: linear-gradient(
+        90deg,
+        #9563df,
+        #c6a4ef,
+        #f0e5ff,
+        #b68be8,
+        #e8d8ff
+    );
+
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    filter: drop-shadow(0 0 22px rgba(170, 110, 255, .22));
+
+    animation:
+        monoReveal 1.5s ease forwards,
+        monoGradient 8s linear infinite;
+}
+
+/* TAHUN */
+.mono-subtitle {
+    margin-top: 24px !important;
+    font-size: clamp(22px, 3vw, 42px) !important;
+    letter-spacing: .5em !important;
+    color: #d9c2f4 !important;
+    font-weight: 400;
+}
+
+/* GARIS GLOW */
+.mono-title-wrapper::after {
+    content: "";
+    display: block;
+    width: min(450px, 60%);
+    height: 2px;
+    margin: 20px auto 0;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #a855f7,
+        #e9d5ff,
+        #a855f7,
+        transparent
+    );
+
+    box-shadow: 0 0 18px #a855f7;
+}
+
+/* HILANGKAN NAVIGASI BAWAH LAMA */
+.mono-bottom {
+    display: none !important;
+}
+
+/* NAV BAR MENU KEDUA */
+.nav {
+    position: absolute !important;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+/* HILANGKAN LOGO PUTRI.NH DI MENU KEDUA */
+.nav .logo {
+    display: none !important;
+}
+
+.nav-inner {
+    width: 100%;
+    max-width: none !important;
+    display: flex;
+    justify-content: center !important;
+    padding: 0 3%;
+}
+
+.nav-links {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(15px, 3.5vw, 55px);
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #d5d0e4 !important;
+    text-decoration: none;
+    font-size: clamp(10px, 1vw, 15px);
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #c084fc !important;
+}
+
+/* COVER RESPONSIVE */
+@media (max-width: 768px) {
+
+    .mono-nav {
+        padding: 18px 5%;
+    }
+
+    .mono-title {
+        font-size: 12vw !important;
+    }
+
+    .mono-title-wrapper {
+        top: 55%;
+    }
+
+    .mono-subtitle {
+        font-size: 22px !important;
+        letter-spacing: .35em !important;
+    }
+
+    .nav {
+        top: 65px;
+    }
+
+    .nav-inner {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+}
+
+/* ANIMASI INTRO */
+#intro-loader {
+    background:
+        radial-gradient(ellipse at center,
+            rgba(125, 65, 220, .20),
+            #050505 75%) !important;
+}
+
+</style>
+</head>
+<body>
+    <!-- HERO MONOCHROME TRIAL -->
+<section class="mono-hero" id="home">
+
+    <!-- Background Foto -->
+    <div class="mono-bg"></div>
+
+    <!-- Overlay Gelap -->
+    <div class="mono-overlay"></div>
+
+    <!-- Navigasi Atas -->
+    <nav class="mono-nav">
+        <a href="#home" class="mono-logo">PN.</a>
+
+        <div class="mono-nav-right">
+            <span>PORTFOLIO 2026</span>
+            <a href="#about">ABOUT ↗</a>
+        </div>
+    </nav>
+
+    <!-- Deskripsi Kecil -->
+    <div class="mono-description">
+        <p>
+            Computer Engineering Graduate.<br>
+            Exploring technology, creativity<br>
+            and digital experiences.
+        </p>
+    </div>
+
+    <!-- Nama Panjang di Tengah -->
+    <div class="mono-title-wrapper">
+        <h1 class="mono-title">PORTOFOLIO</h1>
+        <p class="mono-subtitle">2026</p>
+    </div>
+
+    <!-- Navigasi Bawah -->
+    <div class="mono-bottom">
+        <a href="#about" class="mono-explore">
+            EXPLORE <span>↗</span>
+        </a>
+
+        <span class="mono-page">01 / 09</span>
+
+        <a href="#about" class="mono-next">
+            NEXT &nbsp; ABOUT ME
+            <span class="mono-arrow">↗</span>
+        </a>
+    </div>
+
+</section>
+<!-- END HERO MONOCHROME -->
+ 
+<!-- NAVIGASI PORTOFOLIO -->
+<nav class="nav">
+    <div class="container nav-inner">
+        <a class="logo" href="#home">PUTRI<span>.</span>NH</a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#organization">Organization</a>
+            <a href="#certification">Certification</a>
+            <a href="#journal">Publication</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Buka menu">
+            ☰
+        </button>
+    </div>
+</nav>
+
+<main>
+<section class="hero container" id="profile">
+<div class="hero-copy">
+<div class="eyebrow"><span class="dot"></span> OPEN TO OPPORTUNITIES · SAMARINDA</div>
+<h1>Putri Nur<br><span class="accent">Halizah.</span></h1>
+<div class="typing" id="typing"></div>
+<p>Fresh Graduate D III Teknik Komputer dari Politeknik Negeri Samarinda dengan pemahaman di bidang teknologi komputer, jaringan, dan sistem informasi. Memiliki pengalaman dalam administrasi, pengelolaan dokumen, operasional, serta dukungan teknis IT. Terbiasa bekerja secara teliti, terorganisir, dan bertanggung jawab dalam menyelesaikan tugas. Memiliki kemampuan beradaptasi, komunikasi, serta kolaborasi yang baik, disertai semangat untuk terus mengembangkan keterampilan dan pengetahuan di bidang administrasi, pelayanan, maupun teknologi informasi.</p>
+<div class="btns"><a class="btn primary" href="#experience">Jelajahi Portofolio ↗</a><a class="btn" href="#contact">Hubungi Saya</a></div>
+<div class="stats"><div class="stat"><strong>3.32</strong><small>IPK</small></div><div class="stat"><strong>D3</strong><small>Teknik Komputer</small></div><div class="stat"><strong>SINTA 5</strong><small>Publikasi Jurnal</small></div></div>
+</div>
+<div class="hero-art"><div class="orbit"></div><div class="orbit two"></div><div class="profile-frame"><img src="foto profile.png" alt="Foto wisuda Putri Nur Halizah"></div><div class="floating-tag tag-a">✦ ADMIN & IT SUPPORT</div><div class="floating-tag tag-b">⌁ CREATIVE · DETAIL-ORIENTED</div></div>
+</section>
+<section id="about"><div class="container reveal">
+<div class="section-head"><span class="mono">01 / ABOUT ME</span><h2>Profil & Fokus</h2><p>Memadukan ketelitian administrasi dengan pemahaman teknis komputer untuk mendukung proses kerja yang tertata dan efisien.</p></div>
+<div class="grid grid-3">
+<div class="card"><div class="icon">🗂️</div><h3>Administrasi</h3><p>Dokumentasi, surat-menyurat, pengarsipan digital, pencatatan data, dan penyusunan laporan.</p></div>
+<div class="card"><div class="icon">🖥️</div><h3>IT Support</h3><p>Pengetahuan dasar troubleshooting komputer, hardware, jaringan LAN, dan dukungan teknis.</p></div>
+<div class="card"><div class="icon">🤝</div><h3>Kolaborasi</h3><p>Koordinasi tim, komunikasi, pengelolaan kegiatan, dan tanggung jawab organisasi.</p></div>
+</div></div></section>
+<!-- ===== EDUCATION SECTION ===== -->
+<section id="education">
+    <div class="container reveal">
+
+        <div class="section-head">
+            <span class="mono">02 / EDUCATION</span>
+            <h2>Academic Journey</h2>
+            <p>
+                Perjalanan pendidikan yang membentuk fondasi
+                pengetahuan, keterampilan, dan kompetensi saya
+                di bidang teknologi komputer.
+            </p>
+        </div>
+
+        <div class="grid grid-2">
+
+            <!-- EDUCATION CARD -->
+            <div class="card">
+                <div class="icon">🎓</div>
+
+                <span class="pill">D III</span>
+
+                <h3 style="margin-top:15px">
+                    Teknik Komputer
+                </h3>
+
+                <p>
+                    Politeknik Negeri Samarinda
+                </p>
+
+                <div class="stats">
+
+                    <div class="stat">
+                        <strong>3.32</strong>
+                        <small>IPK</small>
+                    </div>
+
+                    <div class="stat">
+                        <strong>D3</strong>
+                        <small>Degree</small>
+                    </div>
+
+                    <div class="stat">
+                        <strong>IT</strong>
+                        <small>Major</small>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ACADEMIC FOCUS CARD -->
+            <div class="card">
+                <div class="icon">💻</div>
+
+                <h3>Academic Focus</h3>
+
+                <p>
+                    Selama menempuh pendidikan Teknik Komputer,
+                    saya mempelajari dasar perangkat keras,
+                    jaringan komputer, sistem komputer,
+                    teknologi informasi, serta troubleshooting
+                    dan dukungan teknis.
+                </p>
+
+                <div style="margin-top:15px">
+
+                    <span class="pill">Computer Hardware</span>
+                    <span class="pill">Networking</span>
+                    <span class="pill">IT Support</span>
+                    <span class="pill">Troubleshooting</span>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="experience"><div class="container reveal">
+<div class="section-head"><span class="mono">02 / EXPERIENCE</span><h2>Pengalaman</h2><p>Pengalaman kerja, magang, dan organisasi yang membentuk kemampuan operasional serta profesional.</p></div>
+<div class="timeline">
+<div class="card timeline-card"><div class="timeline-label">MAGANG · 4 BULAN</div><div><h3>Staf Administrasi Jurusan — POLNES</h3><p>Politeknik Negeri Samarinda</p><ul><li>Mengelola pengarsipan surat masuk dan keluar jurusan.</li><li>Rekap data operasional perkuliahan harian.</li><li>Koordinasi layanan akademik dosen dan mahasiswa.</li></ul></div></div>
+<div class="card timeline-card"><div class="timeline-label">CASH HANDLING & ADMINISTRATION</div><div><h3>Digital Printing & Counter Staff</h3><p>Nalen Cell & Copy Center</p><ul><li>Operasional cetak, scan, fotokopi, dan penjilidan.</li><li>Penjualan pulsa, data, voucher, melayani transaksi setor tunai dan token digital.</li><li>Pembukuan kas harian dan layanan pelanggan.</li></ul></div></div>
+<div class="card timeline-card"><div class="timeline-label">ORGANISASI HIMPUNAN MAHASISWA JURUSAN TEKNOLOGI INFORMASI (HIMA TI) · 2024–2025</div><div><h3>Sekretaris & Bendahara Departemen KPSDM</h3><p>Himpunan Mahasiswa Teknologi Informasi (HIMATI)</p><ul><li>Menyusun proposal, LPJ, dan notulensi rapat.</li><li>Mengelola database kaderisasi mahasiswa.</li><li>Koordinasi program kerja dan administrasi kegiatan.</li></ul></div></div>
+<a href="sertifikat pengalaman organisasi .pdf" target="_blank" class="cert-button">
+    🏆 Lihat Sertifikat Penghargaan
+</a>
+</div></div></section>
+<!-- ===== SKILLS SECTION ===== -->
+<section id="skills">
+    <div class="container reveal">
+
+        <div class="section-head">
+            <span class="mono">04 / SKILLS</span>
+            <h2>My Competencies</h2>
+            <p>
+                Technical knowledge, administrative abilities,
+                and interpersonal skills that support my
+                professional development.
+            </p>
+        </div>
+
+        <div class="grid grid-2">
+
+            <!-- HARD SKILLS -->
+            <div class="card">
+                <div class="icon">💻</div>
+
+                <h3>Technical Hard Skills</h3>
+
+                <p>
+                    Kemampuan teknis di bidang komputer,
+                    teknologi informasi, dan perangkat kerja.
+                </p>
+
+                <div style="margin-top:15px">
+
+                    <span class="pill">Computer Hardware</span>
+                    <span class="pill">IT Support</span>
+                    <span class="pill">Basic Networking</span>
+                    <span class="pill">LAN</span>
+                    <span class="pill">Troubleshooting</span>
+                    <span class="pill">Microsoft Word</span>
+                    <span class="pill">Microsoft Excel</span>
+                    <span class="pill">Google Docs</span>
+                    <span class="pill">Google Sheets</span>
+                    <span class="pill">Printing & Scanning</span>
+
+                </div>
+            </div>
+
+
+            <!-- ADMINISTRATIVE SKILLS -->
+            <div class="card">
+                <div class="icon">📋</div>
+
+                <h3>Administrative Skills</h3>
+
+                <p>
+                    Kemampuan pengelolaan dokumen,
+                    data, administrasi, dan operasional
+                    pekerjaan.
+                </p>
+
+                <div style="margin-top:15px">
+
+                    <span class="pill">Data Entry</span>
+                    <span class="pill">Document Management</span>
+                    <span class="pill">Digital Archiving</span>
+                    <span class="pill">Correspondence</span>
+                    <span class="pill">Report Preparation</span>
+                    <span class="pill">Cash Administration</span>
+                    <span class="pill">Data Recapitulation</span>
+
+                </div>
+            </div>
+
+
+            <!-- SOFT SKILLS -->
+            <div class="card">
+                <div class="icon">🤝</div>
+
+                <h3>Soft Skills</h3>
+
+                <p>
+                    Kemampuan interpersonal dan sikap
+                    profesional dalam lingkungan kerja.
+                </p>
+
+                <div style="margin-top:15px">
+
+                    <span class="pill">Communication</span>
+                    <span class="pill">Teamwork</span>
+                    <span class="pill">Time Management</span>
+                    <span class="pill">Responsibility</span>
+                    <span class="pill">Adaptability</span>
+                    <span class="pill">Problem Solving</span>
+                    <span class="pill">Coordination</span>
+
+                </div>
+            </div>
+
+
+            <!-- ADDITIONAL SKILLS -->
+            <div class="card">
+                <div class="icon">🚗</div>
+
+                <h3>Additional Skills</h3>
+
+                <p>
+                    Kemampuan tambahan yang mendukung
+                    mobilitas dan aktivitas operasional.
+                </p>
+
+                <div style="margin-top:15px">
+
+                    <span class="pill">
+    Manual & Automatic Driving
+</span>
+
+                    <span class="pill">
+                        Customer Service
+                    </span>
+
+                    <span class="pill">
+                        Printing Services
+                    </span>
+
+                    <span class="pill">
+                        Transaction Handling
+                    </span>
+
+                </div>
+
+                <p style="margin-top:15px;font-size:13px">
+                    Able to operate both manual and automatic transmission vehicles.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="certification"><div class="container reveal">
+<div class="section-head"><span class="mono">04 / CERTIFICATION</span><h2>Sertifikasi Profesional</h2><p>Sertifikat kompetensi yang mendukung kemampuan teknis di bidang jaringan komputer.</p></div>
+<div class="grid grid-2">
+<div class="card cert-card"><div class="cert-icon">🏅</div><div><span class="pill">BNSP · 2026</span><h3 style="margin-top:12px">Junior Network Administrator</h3><p>Sertifikat kompetensi bidang Jaringan Komputer dari LSP Politeknik Negeri Samarinda. Berlaku 3 tahun.</p></div><a class="btn primary" href="sertifikasi.pdf" target="_blank">Buka Sertifikat PDF ↗</a><p class="mono">Unit kompetensi: Network Addressing · Wireless · Switch · Routing</p></div>
+<div class="card cert-card"><div class="cert-icon">📄</div><div><h3>Dokumen Sertifikasi</h3><p>Dokumen sertifikat terdiri dari 2 halaman. Klik tombol untuk membuka atau mengunduh PDF dan melihat detail unit kompetensi.</p></div><a class="btn" href="sertifikasi.pdf" download>Unduh Sertifikat ↓</a><p class="mono">File: sertifikasi.pdf</p></div>
+</div></div></section>
+<section id="organization"><div class="container reveal">
+<div class="section-head"><span class="mono">05 / ORGANIZATION</span><h2>Program Kerja KPSDM HIMATI</h2><p>Ruang belajar, pengembangan, dan kebersamaan mahasiswa.</p></div>
+<div class="grid grid-3">
+<div class="card"><div class="icon">🎓</div><h3>Seminar Hardskill & Softskill</h3><p>Pengembangan kapasitas dan keterampilan mahasiswa untuk kebutuhan akademik dan dunia kerja.</p></div>
+<div class="card"><div class="icon">🚀</div><h3>Kuliah Perdana</h3><p>Pengenalan lingkungan perkuliahan, arah pembelajaran, dan informasi kampus.</p></div>
+<div class="card"><div class="icon">🌱</div><h3>Bina Akrab</h3><p>Membangun kedekatan, komunikasi, dan kebersamaan antarmahasiswa.</p></div>
+<div class="card"><div class="icon">💡</div><h3>IT Fest</h3><p>Ruang kreativitas, eksplorasi minat, dan kolaborasi di bidang teknologi informasi.</p></div>
+<div class="card"><div class="icon">🔄</div><h3>Serah Terima Jabatan</h3><p>Transisi kepengurusan dan kesinambungan tanggung jawab organisasi.</p></div>
+</div></div></section>
+<section id="journal"><div class="container reveal">
+<div class="section-head"><span class="mono">06 / RESEARCH & PUBLICATION</span><h2>Publikasi Ilmiah</h2><p>Pengalaman menulis dan berkontribusi dalam publikasi ilmiah.</p></div>
+<div class="card journal"><div class="badge">✦ JOURNAL PUBLICATION · SINTA 5</div><h3>Penulis / Kontributor Publikasi Jurnal SINTA 5</h3><p>Saya pernah berkontribusi dalam penyusunan dan publikasi jurnal ilmiah yang terindeks SINTA 5. Pengalaman ini menjadi bagian dari perjalanan akademik, riset, penulisan ilmiah, serta penyusunan karya berbasis proyek.</p><a class="journal-link" href="https://doi.org/10.55606/jupti.v5i2.7054" target="_blank" rel="noopener">Lihat publikasi melalui DOI ↗</a></div>
+</div></section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="closing-section">
+  <div class="closing-container">
+
+    <!-- KONTEN KIRI -->
+    <div class="closing-content">
+
+      <span class="closing-label">07 / CONTACT</span>
+
+      <h2>Let's <span>Connect!</span></h2>
+
+      <p class="closing-subtitle">
+        Terbuka untuk kesempatan magang, kerja,
+        kolaborasi, dan pengalaman baru.
+      </p>
+
+      <div class="closing-card">
+        <div class="closing-message">
+          <h3>Siap berkembang<br>dan berkontribusi.</h3>
+
+          <p>
+            Terima kasih sudah mengunjungi portofolio saya.
+            <br>Mari terhubung dan berdiskusi.
+          </p>
+        </div>
+
+        <div class="closing-info">
+          <p>✉ putriinhz@gmail.com</p>
+          <p>☎ WhatsApp · 0831-6697-3127</p>
+          <p>⌖ Samarinda, Kalimantan Timur</p>
+        </div>
+      </div>
+
+      <!-- TOMBOL -->
+      <div class="closing-buttons">
+
+        <a href="https://wa.me/6283166973127"
+           target="_blank"
+           class="closing-btn whatsapp">
+          WhatsApp ↗
+        </a>
+
+        <a href="mailto:putriinhz@gmail.com"
+           class="closing-btn email">
+          Email ↗
+        </a>
+
+        <a href="cv-putri.pdf"
+           download
+           class="closing-btn cv">
+          Download CV ↓
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- FOTO KANAN -->
+    <div class="closing-photo">
+      <div class="photo-glow"></div>
+
+      <img src="foto closing.png"
+           alt="Putri Nur Halizah">
+    </div>
+
+  </div>
+</section>
+
+</main>
+<footer><div class="container">© 2026 PUTRI NUR HALIZAH · Built with curiosity & creativity ✦</div></footer>
+<script>
+const words=["Administrative Support","IT Support Enthusiast","Junior Network Administrator","Journal Contributor · SINTA 5"];
+let wi=0,ci=0,del=false;const typing=document.getElementById("typing");
+function type(){let word=words[wi];typing.textContent=word.slice(0,ci)+(ci<word.length?"▍":"");if(!del){ci++;if(ci>word.length){del=true;setTimeout(type,1300);return}}else{ci--;if(ci<0){del=false;wi=(wi+1)%words.length;ci=0}}setTimeout(type,del?42:75)}
+type();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+const menu=document.getElementById("menuBtn"),links=document.getElementById("navLinks");
+menu.addEventListener("click",()=>links.classList.toggle("open"));
+links.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>links.classList.remove("open")));
+</script>
+</body>
+</html>
